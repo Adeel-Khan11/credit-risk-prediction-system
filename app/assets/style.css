@@ -1,0 +1,489 @@
+/* ===========================================================
+   GOOGLE FONT
+=========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================================================
+   GLOBAL
+=========================================================== */
+
+html, body, [class*="css"]{
+    font-family: 'Poppins', sans-serif;
+}
+
+.stApp{
+    background: linear-gradient(
+        135deg,
+        #071739 0%,
+        #0F3460 45%,
+        #1B4D8C 100%
+    );
+    color: white;
+}
+
+/* Fix all text colors to be visible */
+.stMarkdown, .stText, .stNumberInput, .stSelectbox, .stSlider,
+.stTextInput, .stDateInput, .stTimeInput, .stTextArea {
+    color: #FFFFFF !important;
+}
+
+/* Fix label colors */
+.stNumberInput label, .stSelectbox label, .stSlider label,
+.stTextInput label, .stDateInput label, .stTimeInput label,
+.stTextArea label {
+    color: #D5E5FF !important;
+    font-weight: 500 !important;
+}
+
+/* Fix input values */
+.stNumberInput input, .stTextInput input, .stTextArea textarea {
+    color: #0F172A !important;
+    background-color: #EEF5FF !important;
+}
+
+/* ===========================================================
+   MAIN CONTAINER
+=========================================================== */
+
+.block-container{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* ===========================================================
+   HEADER / HERO
+=========================================================== */
+
+.header-card{
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 35px;
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+    margin-bottom: 25px;
+}
+
+.header-card h1{
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.header-card p{
+    color: #D5E5FF;
+    font-size: 18px;
+}
+
+/* ===========================================================
+   SECTION HEADINGS
+=========================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+/* Fix for markdown headings */
+.stMarkdown h1, .stMarkdown h2, .stMarkdown h3,
+.stMarkdown h4, .stMarkdown h5, .stMarkdown h6 {
+    color: white !important;
+}
+
+/* ===========================================================
+   METRIC CARDS
+=========================================================== */
+
+[data-testid="metric-container"]{
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    transition: .35s;
+}
+
+[data-testid="metric-container"]:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+/* Fix metric labels and values */
+[data-testid="stMetricLabel"] {
+    color: #D5E5FF !important;
+    font-weight: 500 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+/* ===========================================================
+   INPUT BOXES
+=========================================================== */
+
+.stNumberInput input{
+    background: #EEF5FF !important;
+    color: #0F172A !important;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+}
+
+.stNumberInput input:focus {
+    border: 2px solid #0072FF !important;
+    box-shadow: 0 0 10px rgba(0,114,255,0.3) !important;
+}
+
+div[data-baseweb="select"]{
+    background: #EEF5FF !important;
+    border-radius: 12px;
+}
+
+div[data-baseweb="select"] *{
+    color: #0F172A !important;
+}
+
+/* Fix select box dropdown */
+div[data-baseweb="select"] > div {
+    background-color: #EEF5FF !important;
+}
+
+/* Fix select box options in dropdown */
+div[role="listbox"] {
+    background-color: #EEF5FF !important;
+}
+
+div[role="option"] {
+    color: #0F172A !important;
+    background-color: #EEF5FF !important;
+}
+
+div[role="option"]:hover {
+    background-color: #D5E5FF !important;
+}
+
+/* ===========================================================
+   SLIDERS
+=========================================================== */
+
+.stSlider{
+    padding-top: 12px;
+}
+
+/* Fix slider labels */
+.stSlider label {
+    color: #D5E5FF !important;
+}
+
+/* Fix slider value display */
+.stSlider .stMarkdown {
+    color: white !important;
+}
+
+/* ===========================================================
+   BUTTON
+=========================================================== */
+
+.stButton > button{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white !important;
+    background: linear-gradient(
+        90deg,
+        #00C6FF,
+        #0072FF
+    );
+    transition: .35s;
+}
+
+.stButton > button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,114,255,.5);
+    color: white !important;
+}
+
+.stButton > button:active {
+    transform: scale(0.98);
+}
+
+/* ===========================================================
+   SIDEBAR
+=========================================================== */
+
+section[data-testid="stSidebar"]{
+    background: #04142E;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] h4,
+section[data-testid="stSidebar"] h5,
+section[data-testid="stSidebar"] h6,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] div {
+    color: white !important;
+}
+
+/* Fix sidebar metric cards */
+section[data-testid="stSidebar"] [data-testid="metric-container"] {
+    background: rgba(255,255,255,.05) !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMetricLabel"] {
+    color: #D5E5FF !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMetricValue"] {
+    color: white !important;
+}
+
+/* Fix sidebar success/warning/info/error boxes */
+section[data-testid="stSidebar"] .stAlert {
+    color: white !important;
+}
+
+section[data-testid="stSidebar"] .stAlert div {
+    color: white !important;
+}
+
+/* ===========================================================
+   EXPANDER
+=========================================================== */
+
+.streamlit-expanderHeader{
+    font-size: 18px;
+    font-weight: 600;
+    color: white !important;
+}
+
+.streamlit-expanderContent {
+    color: white !important;
+}
+
+/* ===========================================================
+   PLOTLY CHARTS
+=========================================================== */
+
+.js-plotly-plot{
+    background: rgba(255,255,255,.05);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* ===========================================================
+   ALERT BOXES (Success, Warning, Error, Info)
+=========================================================== */
+
+.stAlert {
+    border-radius: 15px;
+    color: white !important;
+}
+
+.stAlert div {
+    color: white !important;
+}
+
+.stAlert .stMarkdown {
+    color: white !important;
+}
+
+.stAlert .stMarkdown p {
+    color: white !important;
+}
+
+.stSuccess {
+    background-color: rgba(22, 163, 74, 0.2) !important;
+    border-left: 5px solid #16A34A !important;
+}
+
+.stWarning {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    border-left: 5px solid #F59E0B !important;
+}
+
+.stError {
+    background-color: rgba(220, 38, 38, 0.2) !important;
+    border-left: 5px solid #DC2626 !important;
+}
+
+.stInfo {
+    background-color: rgba(59, 130, 246, 0.2) !important;
+    border-left: 5px solid #3B82F6 !important;
+}
+
+/* ===========================================================
+   PROGRESS BARS
+=========================================================== */
+
+.stProgress > div {
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
+.stProgress > div > div {
+    background: linear-gradient(90deg, #00C6FF, #0072FF) !important;
+}
+
+/* ===========================================================
+   CAPTIONS
+=========================================================== */
+
+.stCaption {
+    color: #D5E5FF !important;
+}
+
+/* ===========================================================
+   DIVIDERS
+=========================================================== */
+
+hr {
+    border: 1px solid rgba(255,255,255,.15);
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #071739;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, #00C6FF, #0072FF);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0072FF;
+}
+
+/* ===========================================================
+   DATA FRAME / TABLES
+=========================================================== */
+
+.dataframe {
+    color: white !important;
+}
+
+.dataframe th {
+    background-color: rgba(0,114,255,0.3) !important;
+    color: white !important;
+}
+
+.dataframe td {
+    background-color: rgba(255,255,255,0.05) !important;
+    color: white !important;
+}
+
+/* ===========================================================
+   JSON DISPLAY
+=========================================================== */
+
+.stJson {
+    background-color: rgba(255,255,255,0.05) !important;
+    border-radius: 10px !important;
+    color: white !important;
+}
+
+.stJson div {
+    color: white !important;
+}
+
+/* ===========================================================
+   TABS
+=========================================================== */
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #D5E5FF !important;
+    background-color: rgba(255,255,255,0.05) !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background: linear-gradient(90deg, #00C6FF, #0072FF) !important;
+    color: white !important;
+}
+
+/* ===========================================================
+   COLUMNS FIX
+=========================================================== */
+
+div[data-testid="column"] {
+    color: white !important;
+}
+
+/* ===========================================================
+   RADIO BUTTONS & CHECKBOXES
+=========================================================== */
+
+.stRadio label, .stCheckbox label {
+    color: white !important;
+}
+
+.stRadio div[role="radiogroup"] label {
+    color: white !important;
+}
+
+/* ===========================================================
+   MULTISELECT
+=========================================================== */
+
+.stMultiSelect div {
+    color: white !important;
+}
+
+.stMultiSelect div[data-baseweb="select"] {
+    background-color: #EEF5FF !important;
+}
+
+.stMultiSelect div[data-baseweb="select"] * {
+    color: #0F172A !important;
+}
+
+/* ===========================================================
+   TOOLTIPS
+=========================================================== */
+
+.tooltip {
+    color: white !important;
+}
+
+/* ===========================================================
+   RESPONSIVE DESIGN
+=========================================================== */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header-card h1 {
+        font-size: 28px;
+    }
+
+    [data-testid="metric-container"] {
+        padding: 12px;
+    }
+}
